@@ -1,0 +1,141 @@
+<!DOCTYPE html> <!-- Holder med referanse i hht HTML5 standard -->
+<meta charset="UTF-8">
+<html lang="nb-NO" class="">
+<head>
+
+<title>Programvare</title> <!-- Tittel på HTML filen min i nettleservinduet-->
+
+<!-- Koblingen til .css filen (stilarket) mitt -->
+<link href="../minstil.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+
+<main>
+    <div class="meny_topp">
+        &#128279; <a href="../Nettside_Prosjektet.html">Startsiden</a>
+        &#128279; <a href="http://www.youtube.com/channel/UCFB7G96aSKQjiRxnOyjffuQ"target="_blank">Youtube</a>
+        &#128279; <a href="https://www.w3schools.com/html/default.asp"target="_blank">HTML</a>
+        &#128279; <a href="https://www.w3schools.com/css/default.asp"target="_blank">CSS</a>
+        &#128279; <a href="https://microbit.org"target="_blank">Microbit</a>
+        &#128279; <a href="https://scratch.mit.edu"target="_blank">Scratch</a>
+        &#128279; <a href="https://www.w3schools.com/python/default.asp" target="_blank">Python</a>
+        &#128279; <a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a>
+        &#128279; <a href="https://ff.ndla.no/subjects/subject:f248e20c-3131-495e-a759-c71678430d5f?fbclid=IwAR2hesczpV9Ul4mkZcQBlXHamfPphH17lub0oDktza0VXdWvw1VwNJTG-9I" target="_blank">NDLA</a>
+        <div id="nedtelling"> 
+        
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Jun 19, 2020 15:00:00").getTime();
+                
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+                
+                  // Get today's date and time
+                  var now = new Date().getTime();
+                    
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+                    
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                  // Output the result in an element with id="demo"
+                  document.getElementById("nedtelling").innerHTML = "Antall dager til sommerferien: "+ days + "d " + hours + "h "
+                  + minutes + "m " + seconds + "s ";
+                    
+                  // If the count down is over, write some text 
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("nedtelling").innerHTML = "EXPIRED";
+                  }
+                }, 1000);
+                </script>
+        </div>
+
+    </div>
+
+    <div class="header">
+        <h1>Noen nyttige kilder</h1>
+        
+        </div>
+    
+    
+    <div class="meny_venstre">
+        <ol>
+            <li>Oppgaven</li>
+            <ul>
+            <li>&#128279; <a href="Nettside_Oppgave.html">Oppgavebeskrivelse</a></li>
+            </ul>
+            <li>Ressurser</li>
+            <ul>
+            <li>&#128279; <a href="Nettside_Lover.html">Lov og forskrift </a></li>
+            <li>&#128279; <a href="Nettside_Programvare.html">Noen nyttige kilder </a></li>
+            <li>&#128279; <a href="Nettside_Filmer.html">Opplæringsfilmer </a></li>
+          </ul>
+          <li>Inspirasjon</li>
+          <ul>
+          <li>&#128279; <a href="Nettside_Escaperoom.html">Escaperoom </a></li> 
+          </ul>
+          </ol>
+        
+        
+    </div>
+       
+    
+    <div class="hovedvindu">
+        <b>Noen nyttige kilder</b>
+        <br>
+        <br>
+        Linker til de fleste kilder finner du i menylinjen øverst på siden. Men nedenfor er og noen relevante 
+        <br>
+        <br>
+      
+        &#128279; <a href="https://wireframe.cc "target="_blank">Program som kan brukes til å lage skisse: </a>
+        
+        <br>
+        <br>
+       
+        &#128279;  <a href="https://www.techweb.no/blogg/hva-kjennetegner-en-god-nettside-4-tips-til-bra-design"target="_blank"> Grunnleggende layout av nettsider:</a>
+        
+        <br>
+        <br>
+        &#128279; <a href=" https://wcag.difi.no"target="_blank"> Side for standardarisering av nettsider -WCAG:</a>
+       
+
+        <br>
+        <br>
+        &#128279;  <a href="https://validator.w3.org"target="_blank"> Side for å validiere kode:</a>
+        <br>
+        <br>
+        &#128279;  <a href="https://oppgaver.kidsakoder.no/web/publiser/publiser"target="_blank"> GitHub Desktop:</a>
+        <br>
+        <br>
+        &#128279;  <a href="https://www.techweb.no/blogg/hva-kjennetegner-en-god-nettside-4-tips-til-bra-design"target="_blank">  Hva kjennetegner en god nettside:</a>
+        <br>
+        <br>
+        &#128279;  <a href="https://ff.ndla.no/subjects/subject:f248e20c-3131-495e-a759-c71678430d5f/topic:e08eecc8-5e7e-4b85-9876-dfc5d1f3d920/?fbclid=IwAR30rjDlktBPX5ps4__oUXEGlNTtLjoUMjqpIle8tbTQhmj9H-pp61FBovQ "target="_blank">  Hva er programmering mm:</a>
+       
+
+
+        
+    </div>
+ 
+     
+    <div class="footer">
+        <p>Copyright &copy; 2020 Bent, Karin og Frode 
+            <script>
+              document.write(Date());
+              </script>
+    </div>
+</main>
+
+<!-- Slutt på body og HTML -->
+</body>
+</html>
